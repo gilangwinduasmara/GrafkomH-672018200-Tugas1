@@ -78,6 +78,14 @@ void drawKapal() {
 		glVertex2i(251, 120);
 		glVertex2i(271, 120);
 	glEnd();
+
+	glColor3ub(136, 136, 136);
+	glBegin(GL_QUADS);
+		glVertex2i(120,100);
+		glVertex2i(220, 100);
+		glVertex2i(220, 150);
+		glVertex2i(150, 150);
+	glEnd();
 }
 
 void drawGunungEs() {
@@ -119,8 +127,6 @@ void myinit() {
 	glLoadIdentity();
 	gluOrtho2D(0.0, WIDTH, 0.0, HEIGHT);
 }
-
-
 
 
 int main(int argc, char** argv) {
