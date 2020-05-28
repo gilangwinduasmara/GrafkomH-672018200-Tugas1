@@ -58,9 +58,15 @@ void drawBintang(int jumlahBintang) {
 
 void drawKapal() {
 	//kapal
-	glColor3ub(34, 40, 49);
+	glColor3ub(30, 35, 43);
 	glBegin(GL_POLYGON);
 		glVertex2f(100, 100);
+		glVertex2f(400, 100);
+		glVertex2f(350, 25);
+		glVertex2f(150, 25);
+	glEnd();
+	glColor3ub(19, 23, 28);
+	glBegin(GL_POLYGON);
 		glVertex2f(400, 100);
 		glVertex2f(350, 25);
 		glVertex2f(150, 25);
@@ -86,6 +92,13 @@ void drawKapal() {
 		glVertex2i(220, 150);
 		glVertex2i(150, 150);
 	glEnd();
+	glColor3ub(105, 105, 105);
+	glBegin(GL_TRIANGLES);
+		glVertex2i(120, 100);
+		glVertex2i(220, 100);
+		glVertex2i(220, 150);
+		 
+	glEnd();
 }
 
 void drawGunungEs() {
@@ -100,9 +113,15 @@ void drawGunungEs() {
 void drawPesawat() {
 	//pesawat
 	glBegin(GL_TRIANGLES);
-	glVertex2i(500, 350);
-	glVertex2i(500, 300);
-	glVertex2i(350, 325);
+		glVertex2i(500, 350);
+		glVertex2i(500, 300);
+		glVertex2i(350, 325);
+	glEnd();
+	glColor3ub(105, 105, 105);
+	glBegin(GL_TRIANGLES);
+		glVertex2i(500, 340);
+		glVertex2i(500, 300);
+		glVertex2i(350, 325);
 	glEnd();
 }
 
